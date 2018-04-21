@@ -7,6 +7,9 @@ WORKDIR /user/dev/b64ms
 # copy package*.json files into container working directory
 COPY package*.json ./
 
+# install forever
+RUN npm install -g forever
+
 # install application dependencies
 RUN npm install
 
