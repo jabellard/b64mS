@@ -1,0 +1,6 @@
+.git
+gulpfile.js
+node_modules
+*.log
+README.md
+test
