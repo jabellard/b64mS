@@ -1,0 +1,50 @@
+#%RAML 1.0
+
+title: Base 64 encoder/decoder microservice
+description: Base 64 encoder/decoder microservice API.
+version: 1.1.0
+#baseUri:
+protocols:
+  - HTTP
+mediaType: application/json
+uses:
+  dataTypes_: ./libs/dataTypes.raml
+documentation:
+  - title: Headline
+    content: !include ./docs/headline.md
+
+/encode:
+  post:
+    description: Encode a string.
+    body:
+      type: dataTypes_.Input
+      example: !include ./examples/input.json
+    responses:
+      200:
+        description: OK.
+        body:
+          type: dataTypes_.CommandOutput
+          example: !include ./examples/commandOutput.json
+      400:
+        description: Bad request.
+        body:
+          type: dataTypes_.Message
+          example: !include ./examples/message.json
+
+/decode:
+  post:
+    description: Decode a string.
+    body:
+      type: dataTypes_.Input
+      example: !include ./examples/input.json
+    responses:
+      200:
+        description: OK.
+        body:
+          type: dataTypes_.CommandOutput
+          example: !include ./examples/commandOutput.json
+      400:
+        description: Bad request.
+        body:
+          type: dataTypes_.Message
+          example: !include ./examples/message.json

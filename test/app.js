@@ -57,4 +57,17 @@ describe("b64mS", function(){
       });
     });
   });
+
+  describe("/docs route", function(){
+    describe("GET", function(){
+      it("success -- html docs served", function(done){
+        requester
+          .get("/docs")
+          .end(function(err, res){
+            expect(res.status).to.equal(200);
+            done();
+          });
+      });
+    });
+  });
 });

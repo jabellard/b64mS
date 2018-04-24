@@ -1,0 +1,5 @@
+{
+  "command": "ENCODE",
+  "input": "sampleText",
+  "output": "c2FtcGxlVGV4dA=="
+}

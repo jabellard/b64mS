@@ -1,0 +1,19 @@
+#%RAML 1.0 DataType
+
+description: Command output.
+displayName: CommandOutput
+type: object
+properties:
+  command:
+    required: true
+    type: string
+    enum:
+      - ENCODE
+      - DECODE
+  input:
+    required: true
+    type: string
+  output:
+    required: true
+    type: string
+example: !include ../examples/commandOutput.json
