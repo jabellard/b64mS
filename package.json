@@ -4,8 +4,9 @@
   "description": "base 64 encoder/decoder microservice",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "forever start app.js"
+    "test": "mocha",
+    "start_old": "forever start app.js",
+    "start": "node app.js"
   },
   "author": "Joe Nathan Abellard",
   "license": "ISC",
