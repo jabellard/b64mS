@@ -4,3 +4,7 @@ node_modules
 *.log
 README.md
 test
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+.git
+.gitignore
