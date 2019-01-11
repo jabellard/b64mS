@@ -4,7 +4,7 @@
   "description": "base 64 encoder/decoder microservice",
   "main": "app.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --exit",
     "start_old": "forever start app.js",
     "start": "node app.js"
   },
