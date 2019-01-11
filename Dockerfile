@@ -10,6 +10,9 @@ COPY package*.json ./
 # install forever
 RUN npm install -g forever
 
+# install mocha
+RUN npm install -g mocha
+
 # install application dependencies
 RUN npm install
 
