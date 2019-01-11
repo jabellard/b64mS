@@ -2,15 +2,13 @@ version: 0.2
 phases:
   install:
     commands:
-      - sudo apt-get update
-      - sudo apt-get install -y graphviz libgraphviz-dev pkg-config
-      - pip install -r requirements.txt
-
-      #- pip install Django
+      - npm install -g forever
+      - npm install -g mocha
+      - npm install
   pre_build:
     commands:
       - echo Testing...
-      - python manage.py test
+      - npm test
   build:
     commands:
       - echo Build started on `date`
